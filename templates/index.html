@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>ORDERS</title>
+        </head>
+        <body>
+            <h1>ORDERS</h1>
+            {% for item in order_list %}
+            <a href="http://127.0.0.1:4999/orders/{{loop.index0}}"><h2>{{item.customer_name}}</h2></a>
+            {% endfor %}
+        </body>
+
+
+
+    </html>
